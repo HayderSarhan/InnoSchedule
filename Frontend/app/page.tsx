@@ -1,95 +1,85 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
+import Link from "next/link";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "InnoSchedule - Your Personal Course Planner",
+  description:
+    "Organize your courses and stay on top of your academic schedule with InnoSchedule - the ultimate course planner for students at Innopolis University. Never miss a class and make the most of your academic journey.",
+  keywords:
+    "InnoSchedule, course planner, academic schedule, student app, timetable management, Innopolis University",
+  openGraph: {
+    title: "InnoSchedule - Your Personal Course Planner",
+    description:
+      "Organize your courses and stay on top of your academic schedule with InnoSchedule - the ultimate course planner for students at Innopolis University. Never miss a class and make the most of your academic journey.",
+  },
+};
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+      <section className={styles.hero}>
+        <h1>
+          Welcome to <span>Inno</span>Schedule - Your Personal Course Planner!
+        </h1>
+        <p>Organize Your Courses, Never Miss a Class</p>
+        <Link href="/courses">
+          <button>Get Started</button>
+        </Link>
+      </section>
+      <section className={styles.features}>
+        <h1>Features</h1>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <article>
+            <h1>Easy Course Management</h1>
+            <p>
+              Adding your courses to the calendar is a breeze with InnoSchedule.
+              Enter essential details like course names, instructors, and
+              schedules effortlessly
+            </p>
+          </article>
+          <article>
+            <h1>Customizable Timetable</h1>
+            <p>
+              Tailor your timetable to suit your preferences. InnoSchedule
+              allows you to arrange your courses flexibly, ensuring your
+              schedule aligns perfectly with your daily routine
+            </p>
+          </article>
+          <article>
+            <h1>Real-time Updates</h1>
+            <p>
+              Stay up-to-date with real-time updates and reminders. Whether its
+              a schedule change or an important announcement, InnoSchedule keeps
+              you informed and prepared
+            </p>
+          </article>
+          <article>
+            <h1>User-friendly Interface</h1>
+            <p>
+              InnoSchedule boasts an intuitive and user-friendly interface,
+              making it easy for you to navigate and manage your courses without
+              any hassle
+            </p>
+          </article>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section className={styles.use}>
+        <h2>How It Works:</h2>
+        <ul>
+          <li>
+            1) Add Your Courses - Input your course details, such as course
+            name, instructor, and schedule
+          </li>
+          <li>
+            2) Customize - Edit and arrange your timetable to suit your
+            preferences
+          </li>
+          <li>
+            3) Stay Organized - Never miss a class with real-time updates and
+            reminders
+          </li>
+        </ul>
+      </section>
     </main>
   );
 }
