@@ -1,0 +1,149 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        padding: 25px 0;
+        font-family: '-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'';
+        color: #464646;
+        span{
+            color: #3FBA21;
+        }
+    }
+
+    p{
+        font-size: 20px;
+        padding: 20px 100px;
+        text-align: center;
+        font-family: 'Karla';
+        font-weight: 300;
+        font-size: 25px;
+        color: #464646;
+    }
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #3FBA21;
+    color: white;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        padding: 25px 0;
+        font-family: '-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'';
+    }
+    p{
+        font-size: 20px;
+        padding: 20px 100px;
+        text-align: center;
+        font-family: 'Karla';
+        font-weight: 300;
+        font-size: 25px;
+
+    }
+}
+
+.reason{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        padding: 25px 0;
+        font-family: '-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'';
+        color: #3FBA21;
+    }
+    p{
+        font-size: 20px;
+        padding: 20px 100px;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'Karla';
+        size: 25px;
+        color: #464646;
+    }
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #3FBA21;
+    font-family: '-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'';
+    font-weight: 700;
+    size: 45px;
+    color: white;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        font-family: '-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'';
+        padding: 25px 0;
+        margin-bottom: 40px;
+    }
+    ul{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        padding: 25px 100px;
+        flex-wrap: wrap;
+        list-style: none;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+
+    h2{
+        font-size: 40px;
+        font-family: '-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'';
+        padding: 25px 0;
+        color: #3FBA21;
+    }
+    p{
+        font-size: 25px;
+        padding: 20px 100px;
+        text-align: center;
+        font-family: 'Karla';
+        font-weight: 300;
+        color: #464646;
+    }
+    button{
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #3FBA21;
+        color: #FFFFFF;
+        border-radius: 20px ;
+        height: 60px;
+        width: 150px;
+        border: none;
+        box-shadow: 2px 2px 2px 2px rgba($color: #000000, $alpha: 0.2);
+        font-family: 'Karla';
+        font-weight: 300;
+        transition: 0.7s ease;
+    }
+    button:hover{
+        background-color: #464646;
+        border-color: #464646;
+    }
+    button:active{
+        background-color: #000000;
+        border-color: #000000;
+    }
+}
