@@ -1,0 +1,35 @@
+  .event_container{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      align-items: flex-start;
+      flex-direction: column;
+      font-weight: bold;
+      background-color: #eee;
+      overflow: hidden;
+      padding: 5px;
+      color: #3FBA21;
+      .title_event{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          white-space: normal;
+      }
+      .time_event{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+      }
+  }
+  .fc-event {
+      cursor: pointer;
+      color: #3FBA21 !important;
+    }
+    .fc .fc-timegrid-slot  {
+      cursor: pointer;
+      color: #3FBA21 !important;
+    }
