@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+a {
+  color: #3FBA21;
+}
+.event-containier {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: bold;
+    background-color: #eee;
+    overflow: hidden;
+    padding: 5px;
+    color: #3FBA21;
+    .title-event{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        white-space: normal;
+    }
+    .time-event{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+.fc-event {
+    cursor: pointer;
+  }
+  .fc .fc-timegrid-slot  {
+    cursor: pointer;
+  }
+  @media (max-width:768px) {
+    .fc .fc-button-group  .fc-timeGridWeek-button {
+      display: none !important;
+    }
+    .fc .fc-button-group  .fc-dayGridMonth-button {
+      display: none !important;
+    }
+    .fc .fc-toolbar {
+
+      font-size: 10px !important;
+  }
+  }
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.form-item {
+  padding: 3rem;
+}
