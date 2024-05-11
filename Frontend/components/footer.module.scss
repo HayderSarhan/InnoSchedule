@@ -1,0 +1,23 @@
+.footer{
+    padding: 50px 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #3FBA21;
+    align-items: center;
+    font-weight: 600;
+    color: #FFFFFF;
+    div{
+        display: flex;
+        gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+}
