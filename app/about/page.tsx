@@ -56,8 +56,8 @@ export default function About() {
         <ul>
           <li>Hayder Sarhan</li>
           <li>Mohamad Nour Shahin</li>
-          <li>Jahongir Hayitov</li>
-          <li>Aruzhan Shinbayeva</li>
+          <li>Yehia Sobeh</li>
+          <li>Ali Hamdan</li>
         </ul>
       </section>
       <section className={styles.start}>
