@@ -8,8 +8,7 @@ on:
       - main
       - F13-backend-pipeline
 jobs:
-
-  push_to_registry:
+   Push_Docker_Image:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
@@ -28,7 +27,6 @@ jobs:
           context: ./backend
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/innoschedule:latest
-
    Testing:
     runs-on: ubuntu-latest
     steps:
