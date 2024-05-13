@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-      - F12-pipeline
+      - F13-backend-pipeline
 jobs:
 
   push_to_registry:
