@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check": "prettier --check --ignore-path .prettierignore ./app",
+    "format:fix": "prettier --write --ignore-path .prettierignore ./app"
   },
   "dependencies": {
     "react": "^18",
